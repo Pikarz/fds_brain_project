@@ -1,5 +1,5 @@
 Generation/preprocessing
-checkpoints
+generation_checkpoints
 vae_dataset
 gan_dataset
 dataset

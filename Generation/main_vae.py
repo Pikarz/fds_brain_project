@@ -45,7 +45,7 @@ if __name__ == '__main__':
 
     # Train VAE model on positive samples
     print("Start training VAE on positive samples")
-    checkpoint_dir = '../checkpoints/vae/yes' 
+    checkpoint_dir = '../generation_checkpoints/vae/yes' 
     os.makedirs(checkpoint_dir, exist_ok=True) 
     vae_yes = train_loop_vae(device, data_loader_yes, checkpoint_dir)
     print("Finish training VAE on positive samples")
@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
     # Train VAE model on negative samples
     print("Start training VAE on negative samples")
-    checkpoint_dir = '../checkpoints/vae/no' 
+    checkpoint_dir = '../generation_checkpoints/vae/no' 
     os.makedirs(checkpoint_dir, exist_ok=True) 
     vae_no = train_loop_vae(device, data_loader_no, checkpoint_dir)
     print("Finish training VAE on negative samples")

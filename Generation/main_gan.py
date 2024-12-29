@@ -45,7 +45,7 @@ if __name__ == '__main__':
 
     # Train GAN model on positive samples
     print("Start training VAE on positive samples")
-    checkpoint_dir = '../checkpoints/gan/yes' 
+    checkpoint_dir = '../generation_checkpoints/gan/yes' 
     os.makedirs(checkpoint_dir, exist_ok=True) 
     G_yes, D_yes = train_loop_gan(device, data_loader_yes, checkpoint_dir)
     print("Finish training GAN on positive samples")
@@ -59,7 +59,7 @@ if __name__ == '__main__':
 
     # Train GAN model on negative samples
     print("Start training VAE on negative samples")
-    checkpoint_dir = '../checkpoints/gan/no' 
+    checkpoint_dir = '../generation_checkpoints/gan/no' 
     os.makedirs(checkpoint_dir, exist_ok=True) 
     G_no, D_no = train_loop_gan(device, data_loader_no, checkpoint_dir)
     print("Finish training GAN on negative samples")
